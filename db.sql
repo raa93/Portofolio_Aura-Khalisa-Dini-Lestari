@@ -1,8 +1,10 @@
-CREATE TABLE pasien (
-    id_pasien INT PRIMARY KEY AUTO_INCREMENT,
-    nama VARCHAR(50) NOT NULL,
-    poli VARCHAR(50) NOT NULL,
-    alamat VARCHAR(50) NOT NULL,
-    no_hp CHAR(13) NOT NULL,
-    keluhan VARCHAR(50) NOT NULL
+CREATE TABLE todos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    task VARCHAR(255) NOT NULL,
+    completed TINYINT(1) DEFAULT 0
 );
+
+
+INSERT INTO todos (task, completed) VALUES ('Buy groceries', 0);
+INSERT INTO todos (task, completed) VALUES ('Finish homework', 0);
+INSERT INTO todos (task, completed) VALUES ('Go for a run', 1);
